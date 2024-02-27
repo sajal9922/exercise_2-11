@@ -7,7 +7,11 @@ const PhoneBookForm = ({
 }) => {
   return (
     <form onSubmit={addName}>
-      <div>
+      <div
+        style={{
+          marginBottom: '5px',
+        }}
+      >
         name: <input required value={newName} onChange={handleNameChange} />
       </div>
       <div>
@@ -15,7 +19,15 @@ const PhoneBookForm = ({
         <input required value={newNumber} onChange={handleNumberChange} />
       </div>
       <div>
-        <button type="submit">add</button>
+        <button
+          style={{
+            padding: '5px 10px',
+            cursor: 'pointer',
+          }}
+          type="submit"
+        >
+          add
+        </button>
       </div>
     </form>
   );
